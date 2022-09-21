@@ -12,9 +12,9 @@ public class TipCalculator {
         double totalIncludingTip = totalTipAmount + total; //calculates the bill with the tip
         double tipPerPerson = totalTipAmount/numberOfPeople; //calculates how much tip each person pays
         double totalPerPerson = totalIncludingTip/numberOfPeople; //calculates how much total money each person pays
-        System.out.println("Your total tip amount is: " + Math.round((totalTipAmount/100.0)*100.0));
-        System.out.println("Your total bill including tip is: " + Math.round((totalIncludingTip/100.0)*100.0));
-        System.out.println("The tip per person is: " + Math.round((tipPerPerson/100.0)*100.0));
-        System.out.println("The total per person is: " + Math.round((totalPerPerson/100.0)*100.0));
+        System.out.printf("Your total tip amount is: $%.2f%n" , totalTipAmount); //printf and %.2f%n are used to round the variables to two decimals
+        System.out.printf("Your total bill including tip is: $%.2f%n" , totalIncludingTip);
+        System.out.printf("The tip per person is: $%.2f%n" , tipPerPerson);
+        System.out.printf("The total per person is: $%.2f%n" , totalPerPerson);
     }
 }
